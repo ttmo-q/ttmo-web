@@ -1,19 +1,15 @@
 import React from "react";
+import Home from "@/views/home";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
 
 export default function router() {
   return (
     <Router>
       <div>
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
         <Switch>
           <Route path="/about">
-            <About />
           </Route>
           <Route path="/users">
-            <Users />
           </Route>
           <Route path="/">
             <Home />
@@ -22,16 +18,4 @@ export default function router() {
       </div>
     </Router>
   )
-}
-
-function Home() {
-  return <h2>Home</h2>;
-}
-
-function About() {
-  return <h2>About</h2>;
-}
-
-function Users() {
-  return <h2>Users</h2>;
 }

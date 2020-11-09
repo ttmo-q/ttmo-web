@@ -1,5 +1,6 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
+import { hot } from "react-hot-loader/root";
 import Router from './router'
 
 function App() {
@@ -8,4 +9,4 @@ function App() {
   );
 }
 
-export default App;
+export default hot(App);
