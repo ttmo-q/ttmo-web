@@ -1,16 +1,21 @@
 import React from 'react'
 import './_BubbleBoard.scss'
-import { html } from './bubbleBoard'
 
 
 export default function BubbleBoard() {
   return (
-    <iframe
-      className="BubbleBoard"
-      title="bubbleBoard"
-      srcDoc={ html } style={ {width: '100%', border: '0px', height: '1100px'} }
-      sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
-      scrolling="auto"
-    />
+    <div className="content">
+      <div className="menu">
+      <div className="item item-1">1</div>
+      <div className="item item-2">2</div>
+      <div className="item item-3">3</div>
+      <div className="item item-4">4</div>
+      <div className="item item-5">5</div>
+      <div className="item item-6">6</div>
+      <div className="item item-7">7</div>
+      <div className="item item-8">8</div>
+      <div className="item item-9">9</div>
+      </div>
+    </div>
   )
 }
